@@ -451,7 +451,7 @@ class MyWidget(QMainWindow):
             score[t] += 1
             score[(t + k) % cnt] += 1
         if dif == 2:
-            tries = min(7,tries + 3)
+            tries = min(7, tries + 3)
         elif dif == 3:
             tries = min(5, tries + 2)
         elif dif == 4:
@@ -631,17 +631,17 @@ class MyWidget(QMainWindow):
 
         self.score_player_1.setVisible(False)
         self.score_player_2.setVisible(False)
-        if cnt>2:
+        if cnt > 2:
             self.score_player_3.setVisible(False)
-        if cnt>3:
+        if cnt > 3:
             self.score_player_4.setVisible(False)
-        if cnt>4:
+        if cnt > 4:
             self.score_player_5.setVisible(False)
-        if cnt>5:
+        if cnt > 5:
             self.score_player_6.setVisible(False)
-        if cnt>6:
+        if cnt > 6:
             self.score_player_7.setVisible(False)
-        if cnt>7:
+        if cnt > 7:
             self.score_player_8.setVisible(False)
 
         self.pushButton_Play.setVisible(True)
